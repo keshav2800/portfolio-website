@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color:rgb(222, 240, 238);
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(24, 156, 165);
+  }
+
+.name{
+    float:left;
+    color:black;
+    padding: 4px 50px;
+    font-size: larger;
+    font-family: 'Abril Fatface', cursive;
+  }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    height:80vh;
+    margin:65px
+}
+
+.content{
+    width:33vw;
+    padding: 100px;
+    justify-content: center;
+    font-size:18px
+}
+.description{
+    padding-top:10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+.button{
+    margin-top:20px;
+}
+.button button{
+    margin: 10px;
+    padding:9px;
+    border-radius: 14px;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.button button a{
+    text-decoration:none;
+}
+
+.button button:hover{
+    background-color:rgb(24, 156, 165);
+}
+.image{
+    height:80vh
+}
+
+.contacts{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    margin:100px 100px 00px 100px;
+    padding:20px;
+    align-items:center;
+}
+
+.contacts-title{
+    font-family: 'Libre Baskerville', serif;
+    font-size:xx-large;
+    padding-bottom: 55px;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.contact{
+    padding:5px;
+    font-size:large;
+    display:flex;
+}
+.hobbies{
+    display:flex;
+    flex-direction:column;
+}
+
+.hobbies h1{
+    text-align: center;
+    margin:auto;
+    font-size: xx-large;
+    padding: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.hobbies span{
+    margin:20px;
+    display: inline-grid;
+    padding:0px 50px;
+}
+.hobbies span p{
+    font-size:x-large;
+}
+
+.hobby{
+    display:flex;
+    justify-content: center;
+}
+.progressbar{
+    width:100vw;
+    counter-reset:step;
+}
+
+.progressbar li{
+    list-style-type: none;
+    float:left;
+    width:33.33%;
+    position: relative;
+    text-align: center;
+
+}
+.progressbar li::before{
+    content:counter(step);
+    counter-increment:step;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid #555;
+    display: block;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height: 2px;
+    background-color:#555;
+    top:15px;
+    left:-50%;
+    z-index:-1;
+}
+
+.progressbar li:first-child::after{
+    content:none;
+}
+
+.progressbar li.active{
+    color: rgb(7, 94, 94);
+}
+.progressbar li.active:before{
+    border-color: rgb(16, 139, 139);
+}
+
+.progressbar li.active + li:after{
+    background-color:rgb(7, 94, 94);
+}
+
+.skills{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.skills h1{
+    margin:auto;
+    font-size: xx-large;
+    padding: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.skill{
+    justify-content:center;
+    margin:50px auto 50px 100px;
+    display:flex;
+}
+
+.fab fa-js{
+    background-color:yellow
+}
+
+.projects{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    grid-row-gap:90px;
+    grid-column-gap: 250px;
+    justify-content: center;
+    margin:0px
+}
+
+#project-title{
+    text-align: center;
+    font-size: xx-large;
+    padding: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.project{
+    border: 2px solid rgb(24, 156, 165) ;
+    margin-right: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding:10px;
+    width:400px;
+    border-radius:10px
+}
+
+.project p{
+    margin-top:10px;
+    font-size:x-large
+}
+
+.project h2{
+    font-size:x-large;
+    margin-bottom: 10px;
+    color:rgb(24, 156, 165)
+}
+
+.project p a {
+    text-decoration: none;
+}
+
+.project p a:hover{
+    text-decoration: underline
+}
+
+.activelink{
+    background-color:rgb(24, 156, 165)
+}
+
+.contactinmain{
+    background-color:rgb(71, 186, 194);
+    margin:none
+}
