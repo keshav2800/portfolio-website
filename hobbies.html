@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/d8b39627a3.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="header">
-      <ul>
-        <li class="name"><h1>Vaishali Aggarwal</h1></li>
-        <li>
+      <div class="name"><h1>Vaishali Aggarwal</h1></div>
+      <a class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <h2><a href="/index.html">Home</a></h2>
+          </li>
+          <li class="activelink">
+            <h2><a href="/hobbies.html">My Hobbies</a></h2>
+          </li>
+          <li>
+            <h2><a href="/skills.html"> My skills</a></h2>
+          </li>
+          <li>
+            <h2><a href="/projects.html">Projects</a></h2>
+          </li>
+          <li >
             <h2><a href="/contact.html">Contact</a></h2>
-        </li>
-        <li class="activelink">
-          <h2><a href="/hobbies.html">My Hobbies</a></h2>
-        </li>
-        <li>
-          <h2><a href="/skills.html"> My skills</a></h2>
-        </li>
-        <li>
-          <h2><a href="/projects.html">Projects</a></h2>
-        </li>
-        <li>
-          <h2><a href="/index.html">Home</a></h2>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="main">
       <div class="hobbies">
@@ -37,8 +45,8 @@
         <i class="fas fa-code fa-3x"></i>
         <p>Coding</p>
       </span>
-      <span>
-        <img src="images/dancing.png" height="50px" />
+      <span class="iconimg">
+        <img src="images/dancing.png"/>
         <p>Dance</p>
       </span>
       <span>

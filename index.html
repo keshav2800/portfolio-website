@@ -3,39 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/d8b39627a3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/d8b39627a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
     <div class="header">
-      <ul>
-        <li class="name"><h1>Vaishali Aggarwal</h1></li>
-        <li>
+      <div class="name"><h1>Vaishali Aggarwal</h1></div>
+      <a class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <h2><a href="/index.html">Home</a></h2>
+          </li>
+          <li>
+            <h2><a href="/hobbies.html">My Hobbies</a></h2>
+          </li>
+          <li>
+            <h2><a href="/skills.html"> My skills</a></h2>
+          </li>
+          <li>
+            <h2><a href="/projects.html">Projects</a></h2>
+          </li>
+          <li>
             <h2><a href="/contact.html">Contact</a></h2>
-        </li>
-        <li>
-          <h2><a href="/hobbies.html">My Hobbies</a></h2>
-        </li>
-        <li>
-          <h2><a href="/skills.html"> My skills</a></h2>
-        </li>
-        <li>
-          <h2><a href="/projects.html">Projects</a></h2>
-        </li>
-        <li>
-          <h2><a href="/index.html">Home</a></h2>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="main">
       <div class="container">
         <div class="content">
           <h1 class="title">Enthusiastic and Self-motivated Developer</h1>
           <p class="description">
-            Hi there, I am Vaishali Aggarwal hailing from Delhi. I am a beginner in web development. I have learnt React JS, JavaScript
-            and a bit of firebase. I am always looking out for oppurtunities and willing to improve my skills.
+            Hi there, I am Vaishali Aggarwal hailing from Delhi. I am a beginner
+            in web development. I have learnt React JS, JavaScript and a bit of
+            firebase. I am always looking out for oppurtunities and willing to
+            improve my skills.
           </p>
           <div class="button">
             <button><a href="/hobbies.html">Hobbies</a></button>
@@ -45,36 +58,47 @@
           </div>
         </div>
         <div class="image">
-          <img src="images/pic1.jpg" height="500px" />
+          <img src="images/pic1.jpg" />
         </div>
       </div>
       <div class="hobbies">
         <h1>My Hobbies</h1>
         <div class="hobby">
-      <span>
-        <i class="fas fa-code fa-3x"></i>
-        <p>Coding</p>
-      </span>
-      <span>
-        <img src="images/dancing.png" height="50px" />
-        <p>Dance</p>
-      </span>
-      <span>
-        <i class="fas fa-book-reader fa-3x"></i>
-        <p>Reading</p>
-      </span>
-      <span>
-        <i class="fas fa-music fa-3x"></i>
-        <p>Listening to music</p>
-      </span>
+          <span>
+            <i class="fas fa-code fa-3x"></i>
+            <p>Coding</p>
+          </span>
+          <span class="iconimg">
+            <img src="images/dancing.png" />
+            <p>Dance</p>
+          </span>
+          <span>
+            <i class="fas fa-book-reader fa-3x"></i>
+            <p>Reading</p>
+          </span>
+          <span>
+            <i class="fas fa-music fa-3x"></i>
+            <p>Listening to music</p>
+          </span>
+        </div>
       </div>
-      </div>div>
       <div class="skills">
         <h1>Skills</h1>
         <span>
           <div class="skill">
-          <i class="fab fa-react fa-3x"></i>
-          <h3>REACT JS</h3>
+            <i class="fab fa-react fa-3x"></i>
+            <h3>REACT JS</h3>
+          </div>
+          <ol class="progressbar">
+            <li class="active">Beginner</li>
+            <li class="active">Intermediate</li>
+            <li>Advance</li>
+          </ol>
+        </span>
+        <span class="iconimg">
+          <div class="skill">
+            <img src="images/firebase.png" height="5rem" />
+            <h3>FIREBASE</h3>
           </div>
           <ol class="progressbar">
             <li class="active">Beginner</li>
@@ -84,20 +108,9 @@
         </span>
         <span>
           <div class="skill">
-          <img src="images/firebase.png" height="50px" />
-          <h3>FIREBASE</h3>
-        </div>
-        <ol class="progressbar">
-          <li class="active">Beginner</li>
-          <li class="active">Intermediate</li>
-          <li>Advance</li>
-        </ol>
-        </span>
-        <span>
-          <div class="skill">
-          <i class="fab fa-html5 fa-3x"></i>
-          <h3>HTML</h3>
-        </div>
+            <i class="fab fa-html5 fa-3x"></i>
+            <h3>HTML</h3>
+          </div>
           <ol class="progressbar">
             <li class="active">Beginner</li>
             <li>Intermediate</li>
@@ -106,87 +119,117 @@
         </span>
         <span>
           <div class="skill">
-          <i class="fab fa-js fa-3x"></i>
-          <h3>JAVASCRIPT</h3>
-        </div>
-        <ol class="progressbar">
-          <li class="active">Beginner</li>
-          <li>Intermediate</li>
-          <li>Advance</li>
-        </ol>
+            <i class="fab fa-js fa-3x"></i>
+            <h3>JAVASCRIPT</h3>
+          </div>
+          <ol class="progressbar">
+            <li class="active">Beginner</li>
+            <li>Intermediate</li>
+            <li>Advance</li>
+          </ol>
         </span>
       </div>
       <h1 id="project-title">Projects</h1>
       <div class="projects">
         <div class="project">
           <h2>Memories</h2>
-          <hr>
-          <p>.It helps user to upload their
-            memorable posts with functionality to like , update and delete their
-            posts. It also has sign in and sign up with email as well as google login.
-            </p>
-            <p>TechStacks Used: MERN</p>
+          <hr />
           <p>
-            <a href="https://github.com/VaishaliAgg14/memories-project" target="_blank">Link to project</a>
+            .It helps user to upload their memorable posts with functionality to
+            like , update and delete their posts. It also has sign in and sign
+            up with email as well as google login.
+          </p>
+          <p>TechStacks Used: MERN</p>
+          <p>
+            <a
+              href="https://github.com/VaishaliAgg14/memories-project"
+              target="_blank"
+              >Link to project</a
+            >
           </p>
         </div>
         <div class="project">
           <h2>React Meals</h2>
-          <hr>
-          <p>It helps user to order food with a cart
-            functionality and calculation of the total amount in the cart.            
-            <p>TechStacks Used: React JS</p>
+          <hr />
           <p>
-            <a href="https://github.com/VaishaliAgg14/food-order" target="_blank">Link to project</a>
+            It helps user to order food with a cart functionality and
+            calculation of the total amount in the cart.
+          </p>
+
+          <p>TechStacks Used: React JS</p>
+          <p>
+            <a
+              href="https://github.com/VaishaliAgg14/food-order"
+              target="_blank"
+              >Link to project</a
+            >
           </p>
         </div>
         <div class="project">
           <h2>TakeNotes</h2>
-          <hr>
-          <p>The project helps user to write notes and arrange them in different folder. It also has sign in and sign out functionality.
-            </p>
-            <p>TechStacks Used: React JS , Firebase</p>
+          <hr />
           <p>
-            <a href="https://takenotes2.web.app" target="_blank">Link to project</a>
+            The project helps user to write notes and arrange them in different
+            folder. It also has sign in and sign out functionality.
+          </p>
+          <p>TechStacks Used: React JS , Firebase</p>
+          <p>
+            <a href="https://takenotes2.web.app" target="_blank"
+              >Link to project</a
+            >
           </p>
         </div>
         <div class="project">
           <h2>Portfolio</h2>
-          <hr>
-          <p>It is a portfolio app where you get to know all about me.
-            </p>
-            <p>TechStacks Used: HTML , CSS</p>
+          <hr />
+          <p>It is a portfolio app where you get to know all about me.</p>
+          <p>TechStacks Used: HTML , CSS</p>
           <p>
-            <a href="https://github.com/VaishaliAgg14/portfolio-website" target="_blank">Link to project</a>
+            <a
+              href="https://github.com/VaishaliAgg14/portfolio-website"
+              target="_blank"
+              >Link to project</a
+            >
           </p>
         </div>
       </div>
       <div class="contactinmain">
-      <div class="contacts">
-        <h1 class="contacts-title">Contact Me</h1>
-        <div class="contact">
+        <div class="contacts">
+          <h1 class="contacts-title">Contact Me</h1>
+          <div class="contact">
             <i class="fas fa-phone-alt fa-2x"></i>
             +91 74289 40159
-        </div>
-        <div class="contact">
+          </div>
+          <div class="contact">
             <i class="fas fa-envelope fa-2x"></i>
-             vaishali.aggarwal1410@gmail.com
-        </div>
-        <div class="contact">
+            vaishali.aggarwal1410@gmail.com
+          </div>
+          <div class="contact">
             <i class="fab fa-linkedin fa-2x"></i>
-            <a href="https://www.linkedin.com/in/vaishali-aggarwal-6041b9229/" target="_blank"> https://www.linkedin.com/in/vaishali-aggarwal-6041b9229/</a>
-        </div>
-        <div class="contact">
+            <a
+              href="https://www.linkedin.com/in/vaishali-aggarwal-6041b9229/"
+              target="_blank"
+            >
+              https://www.linkedin.com/in/vaishali-aggarwal-6041b9229/</a
+            >
+          </div>
+          <div class="contact">
             <i class="fab fa-github fa-2x"></i>
-            <a href="https://github.com/VaishaliAgg14" target="_blank"> https://github.com/VaishaliAgg14</a>
-            
-        </div>
-        <div class="contact">
+            <a href="https://github.com/VaishaliAgg14" target="_blank">
+              https://github.com/VaishaliAgg14</a
+            >
+          </div>
+          <div class="contact">
             <i class="fab fa-instagram fa-2x"></i>
-            <a href="https://www.instagram.com/vaishali_agg1410/" target="_blank"> https://www.instagram.com/vaishali_agg1410/</a>
+            <a
+              href="https://www.instagram.com/vaishali_agg1410/"
+              target="_blank"
+            >
+              https://www.instagram.com/vaishali_agg1410/</a
+            >
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
     </div>
     <div class="footer"></div>
   </body>
