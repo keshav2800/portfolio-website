@@ -41,11 +41,18 @@
 
 .header{
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(134, 202, 197);
     color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow:hidden;
+}
+
+.header + .main{
+    padding-top:6rem;
 }
 
 .name{
@@ -93,6 +100,7 @@
     font-size: 1.8rem;
 }
 .image img{
+    margin-top: 6rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -103,6 +111,7 @@
     margin-top:2.0rem;
     margin:1rem;
 }
+
 .button button{
     margin: 1.0rem;
     padding:0.9rem;
@@ -172,6 +181,7 @@
     display: inline-grid;
     padding:0rem 5.0rem;
 }
+
 .hobbies span p{
     font-size: 2rem;
 }
@@ -180,6 +190,7 @@
     display:flex;
     justify-content: center;
 }
+
 .progressbar{
     width:100vw;
     counter-reset:step;
@@ -191,8 +202,8 @@
     width:33.33%;
     position: relative;
     text-align: center;
-
 }
+
 .progressbar li::before{
     content:counter(step);
     counter-increment:step;
@@ -225,9 +236,11 @@
 .progressbar li.active{
     color: rgb(16, 139, 139);
 }
-/* .progressbar li.active2{
-    color: rgb(7, 94, 94);
-} */
+
+.progressbar li.active2{
+    color: rgb(16, 139, 139);
+}
+
 .progressbar li.active:before{
     animation-name:circular;
     animation-duration:0.5s;
@@ -258,6 +271,7 @@
     animation-fill-mode: forwards;
     animation-delay:3s;
 }
+
 @keyframes progressbar {
     from{
         width:0%;
@@ -308,7 +322,7 @@
     grid-row-gap:9.0rem;
     grid-column-gap: 25.0rem;
     justify-content: center;
-    margin-left:-9.1rem 
+    margin-left:-9.1rem ;
 }
 
 #project-title{
@@ -319,7 +333,6 @@
 }
 
 .project{
-    position:relative;
     border: 0.2rem solid rgb(24, 156, 165) ;
     margin-right: 50rem;
     box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2.0rem 0 rgba(0, 0, 0, 0.19);
@@ -346,7 +359,7 @@
 }
 
 .project div a:hover{
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .activelink{
@@ -396,6 +409,10 @@
     .navbar-links.active {
         display: flex;
     }
+
+    .header + .main{
+        padding-top:10.5rem;
+    }
     .container{
         flex-direction: column;
         margin-top: 28rem;
@@ -406,17 +423,21 @@
     .hobbies{
         justify-content: center;
         margin-top:18rem;
+        padding-top:2rem;
     }
+
     .hobby{
         flex-direction:column;
         align-items:center;
     }
+
     .projects{
         display:flex;
         flex-direction:column;
         align-items:center;
         padding:2rem
     }
+
     .project{
         margin:1rem 50rem;
         margin-left:60rem;
